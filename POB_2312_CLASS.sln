@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0", "0\0.csproj", "{CFC5DEB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema15 массивы", "Thema15 массивы\Thema15 массивы.csproj", "{4AE1A6CA-DC92-41C1-9C38-0852782CB1A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thema16 массивы 2D", "Thema16 массивы 2D\Thema16 массивы 2D.csproj", "{BD978E03-65AC-4E19-A3ED-1411608A5C93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema16 массивы 2D", "Thema16 массивы 2D\Thema16 массивы 2D.csproj", "{BD978E03-65AC-4E19-A3ED-1411608A5C93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thema17 многомерные массивы", "Thema17 многомерные массивы\Thema17 многомерные массивы.csproj", "{3727A219-3B25-47CD-ACAC-DED4A60D5C51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{BD978E03-65AC-4E19-A3ED-1411608A5C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD978E03-65AC-4E19-A3ED-1411608A5C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD978E03-65AC-4E19-A3ED-1411608A5C93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3727A219-3B25-47CD-ACAC-DED4A60D5C51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3727A219-3B25-47CD-ACAC-DED4A60D5C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3727A219-3B25-47CD-ACAC-DED4A60D5C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3727A219-3B25-47CD-ACAC-DED4A60D5C51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
