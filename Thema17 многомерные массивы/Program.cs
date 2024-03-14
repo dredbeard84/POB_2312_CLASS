@@ -137,3 +137,7 @@ for (int k = 0; k < mas.GetLength(2); k++)
     }
     Console.WriteLine();
 }
+
+
+// dz 17-2 смотри в Git'e
+
