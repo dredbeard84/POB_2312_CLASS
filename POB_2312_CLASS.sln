@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema16 массивы 2D",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema17 многомерные массивы", "Thema17 многомерные массивы\Thema17 многомерные массивы.csproj", "{3727A219-3B25-47CD-ACAC-DED4A60D5C51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thema18 строки", "Thema18 строки\Thema18 строки.csproj", "{385903FA-6FB5-436E-A605-FE24F6FEFEDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema18 строки", "Thema18 строки\Thema18 строки.csproj", "{385903FA-6FB5-436E-A605-FE24F6FEFEDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thema19 повторение", "Thema19 повторение\Thema19 повторение.csproj", "{DD95554F-71D8-45F7-AF68-7257FA734B6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{385903FA-6FB5-436E-A605-FE24F6FEFEDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{385903FA-6FB5-436E-A605-FE24F6FEFEDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{385903FA-6FB5-436E-A605-FE24F6FEFEDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD95554F-71D8-45F7-AF68-7257FA734B6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD95554F-71D8-45F7-AF68-7257FA734B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD95554F-71D8-45F7-AF68-7257FA734B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD95554F-71D8-45F7-AF68-7257FA734B6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
