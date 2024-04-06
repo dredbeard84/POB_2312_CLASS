@@ -88,7 +88,7 @@
 
 // # 10.17
 
-//long Fact (int x)
+//long Fact(int x)
 //{
 //    long f = 1;
 //    for (int i = 1; i <= x; i++) f *= i;
@@ -362,16 +362,16 @@
 /* # 3. Расчёты.
         Напишите череду функций, которые будут выполнять различные математические расчеты. */
 
-double getDiskriminant(double a, double b, double c)
-{
-    return b * b - 4 * a * c;
-}
-void Two
+//double getDiskriminant(double a, double b, double c)
+//{
+//    return b * b - 4 * a * c;
+//}
+//void Two
 
-double a, b, c;
-Console.WriteLine("Ввведите a: ");
-double.TryParse(Console.ReadLine(), out a);
-Console.WriteLine("Ввведите b: ");
-double.TryParse(Console.ReadLine(), out b);
-Console.WriteLine("Ввведите c: ");
-double.TryParse(Console.ReadLine(), out c);
+//double a, b, c;
+//Console.WriteLine("Ввведите a: ");
+//double.TryParse(Console.ReadLine(), out a);
+//Console.WriteLine("Ввведите b: ");
+//double.TryParse(Console.ReadLine(), out b);
+//Console.WriteLine("Ввведите c: ");
+//double.TryParse(Console.ReadLine(), out c);
