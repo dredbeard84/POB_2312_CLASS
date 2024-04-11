@@ -196,3 +196,85 @@ using System.Text;
 // обсудить удаление
 
 
+// командная строка в консоли
+string path = Directory.GetCurrentDirectory();
+do
+{
+    Console.Write(path + ">");
+    string command = Console.ReadLine();
+    string[] commands = command.Split(' ');
+    switch (commands[0])
+    {
+        case "cd":// переход между папками
+            {
+                switch (commands[1])
+                {
+                    case "..":
+                        path = Directory.GetParent(path).FullName;
+                        break;
+                    case "/":
+                        path = Directory.GetParent(path).Root.FullName;
+                        break;
+                    case "":
+                        if (Directory.Exists(path + @"\" + commands[1]))
+                        {
+                            path = path + @"\" + commands[1];
+                        }
+                        break;
+                }
+            }
+            break;
+        case "ls":// показать содержимое папки
+            GetAll(path);
+            break;
+        case "touch":// создание файла
+            {
+                FileInfo file = new FileInfo(path + @"\" + commands[1]);
+                if (!file.Exists)
+                {
+                    file.Create();
+                }
+                else Console.WriteLine($"Файл {file.Name} существует");
+            }
+            break;
+        case "rm":// удаление файла
+            {
+                FileInfo file = new FileInfo(path + @"\" + commands[1]);
+                if (file.Exists)
+                {
+                    file.Delete();
+                }
+                else Console.WriteLine($"Файл {file.Name} не существует");
+            }
+            break;
+        case "cp":// копирование файла
+            {
+                string currentPath = path + @"\" + commands[1];
+                string newPath = commands[2];
+                FileInfo fileSrc = new FileInfo(currentPath);
+                FileInfo fileSource = new FileInfo(newPath + @"\" + fileSrc.Name);
+                if (fileSrc.Exists)
+                {
+                    if(!fileSource.Exists) fileSource.Create();
+                    fileSrc.CopyTo(fileSource.FullName, true);
+                }
+                else Console.WriteLine($"Файл {fileSrc.Name} не существует");
+            }
+            break;
+    }
+}
+while (true);
+void GetAll(string path)
+{
+    var dir = new DirectoryInfo(path);
+    DirectoryInfo[] dirs = dir.GetDirectories();
+    foreach (DirectoryInfo item in dirs)
+    {
+        Console.WriteLine(item.Name);
+    }
+    FileInfo[] files = dir.GetFiles();
+    foreach (FileInfo item in files)
+    {
+        Console.WriteLine(item.Name);
+    }
+}
