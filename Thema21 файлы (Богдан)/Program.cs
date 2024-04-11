@@ -93,24 +93,24 @@ namespace FileOperator2312
             // # 4
 
 
-            for (int i = 0; i < 10; i++)
-            {
-                Directory.CreateDirectory(Name());
-            }
-            string Name()
-            {
-                Random random = new Random();
-                string abc = "abcdefghijklmnopqrstuvwxyz";
-                int length = 10;
-                string res = "";
-                do
-                {
-                    for (int i = 0; i < length; i++)
-                    {
-                        res += abc[random.Next(0, abc.Length)];
-                    }
-                } while (Directory.Exists(res));
-                return (res);
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    Directory.CreateDirectory(Name());
+            //}
+            //string Name()
+            //{
+            //    Random random = new Random();
+            //    string abc = "abcdefghijklmnopqrstuvwxyz";
+            //    int length = 10;
+            //    string res = "";
+            //    do
+            //    {
+            //        for (int i = 0; i < length; i++)
+            //        {
+            //            res += abc[random.Next(0, abc.Length)];
+            //        }
+            //    } while (Directory.Exists(res));
+            //    return (res);
             }
         }
     }
