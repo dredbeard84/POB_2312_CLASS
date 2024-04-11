@@ -47,6 +47,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema21 файлы", "Thema
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thema21 файлы (Богдан)", "Thema21 файлы (Богдан)\Thema21 файлы (Богдан).csproj", "{54BD914B-DB26-49A5-9B76-B3756BE1D775}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thema22 исключения", "Thema22 исключения\Thema22 исключения.csproj", "{51A90E4B-CE26-4A4C-98B1-C161D16E7BCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{54BD914B-DB26-49A5-9B76-B3756BE1D775}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54BD914B-DB26-49A5-9B76-B3756BE1D775}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54BD914B-DB26-49A5-9B76-B3756BE1D775}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51A90E4B-CE26-4A4C-98B1-C161D16E7BCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A90E4B-CE26-4A4C-98B1-C161D16E7BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A90E4B-CE26-4A4C-98B1-C161D16E7BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A90E4B-CE26-4A4C-98B1-C161D16E7BCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
