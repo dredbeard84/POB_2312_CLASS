@@ -375,3 +375,7 @@
 //double.TryParse(Console.ReadLine(), out b);
 //Console.WriteLine("Ввведите c: ");
 //double.TryParse(Console.ReadLine(), out c);
+
+
+
+// какую-то задачу из дз поэтой теме препод решал в уроке 20
