@@ -49,9 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema21 файлы (Бог�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema22 исключения", "Thema22 исключения\Thema22 исключения.csproj", "{51A90E4B-CE26-4A4C-98B1-C161D16E7BCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thema25 win forms", "Thema31 win forms\Thema25 win forms.csproj", "{4D03C95C-8A15-4981-9733-5968B75CE752}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema25_1 win forms", "Thema31 win forms\Thema25_1 win forms.csproj", "{4D03C95C-8A15-4981-9733-5968B75CE752}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thema25_1", "Thema25_1\Thema25_1.csproj", "{D13470E7-579B-464C-BE7D-E4441E2E76A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema25_2", "Thema25_1\Thema25_2.csproj", "{D13470E7-579B-464C-BE7D-E4441E2E76A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
