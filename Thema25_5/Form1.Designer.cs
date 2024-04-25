@@ -34,7 +34,6 @@
             this.tbxHeight = new System.Windows.Forms.TextBox();
             this.lbxMaterial = new System.Windows.Forms.ListBox();
             this.pbxMaterial = new System.Windows.Forms.PictureBox();
-            this.btResult = new System.Windows.Forms.Button();
             this.lbResult = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMaterial)).BeginInit();
             this.SuspendLayout();
@@ -101,17 +100,6 @@
             this.pbxMaterial.TabIndex = 5;
             this.pbxMaterial.TabStop = false;
             // 
-            // btResult
-            // 
-            this.btResult.Location = new System.Drawing.Point(16, 399);
-            this.btResult.Margin = new System.Windows.Forms.Padding(5);
-            this.btResult.Name = "btResult";
-            this.btResult.Size = new System.Drawing.Size(249, 130);
-            this.btResult.TabIndex = 6;
-            this.btResult.Text = "Подсчитать";
-            this.btResult.UseVisualStyleBackColor = true;
-            this.btResult.Click += new System.EventHandler(this.btResult_Click);
-            // 
             // lbResult
             // 
             this.lbResult.Location = new System.Drawing.Point(275, 399);
@@ -127,7 +115,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(717, 552);
             this.Controls.Add(this.lbResult);
-            this.Controls.Add(this.btResult);
             this.Controls.Add(this.pbxMaterial);
             this.Controls.Add(this.lbxMaterial);
             this.Controls.Add(this.tbxHeight);
@@ -153,7 +140,6 @@
         private TextBox tbxHeight;
         private ListBox lbxMaterial;
         private PictureBox pbxMaterial;
-        private Button btResult;
         private Label lbResult;
     }
 }
