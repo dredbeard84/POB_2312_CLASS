@@ -59,6 +59,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema26_2", "Thema25_4\Them
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema26_3", "Thema25_5\Thema26_3.csproj", "{23586183-D026-4AD1-B5B1-C2689F2FF077}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thema27 методы", "Thema27 методы\Thema27 методы.csproj", "{6FC2DBC8-D0DD-41B6-9EDD-9924CB15DA5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +179,10 @@ Global
 		{23586183-D026-4AD1-B5B1-C2689F2FF077}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23586183-D026-4AD1-B5B1-C2689F2FF077}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23586183-D026-4AD1-B5B1-C2689F2FF077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FC2DBC8-D0DD-41B6-9EDD-9924CB15DA5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC2DBC8-D0DD-41B6-9EDD-9924CB15DA5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC2DBC8-D0DD-41B6-9EDD-9924CB15DA5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC2DBC8-D0DD-41B6-9EDD-9924CB15DA5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
