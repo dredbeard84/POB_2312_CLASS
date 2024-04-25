@@ -13,12 +13,19 @@ namespace Thema25_5
         }
         private void lbxMaterial_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (lbxMaterial.SelectedIndex)
+            try
             {
-                case 0: Calculate("alu.jpeg", 300); break;
-                case 1: Calculate("plastic.jpg", 150); break;
-                case 2: Calculate("wood.jpg", 120); break;
-                case 3: Calculate("bamboo.jpg", 180); break;
+                switch (lbxMaterial.SelectedIndex)
+                {
+                    case 0: Calculate("alu.jpeg", 300); break;
+                    case 1: Calculate("plastic.jpg", 150); break;
+                    case 2: Calculate("wood.jpg", 120); break;
+                    case 3: Calculate("bamboo.jpg", 180); break;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
         private void btResult_Click()
