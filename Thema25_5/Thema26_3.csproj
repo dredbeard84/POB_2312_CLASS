@@ -15,11 +15,4 @@
     <None Remove="wood.jpg" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Resource Include="alu.jpeg" />
-    <Resource Include="bamboo.jpg" />
-    <Resource Include="plastic.jpg" />
-    <Resource Include="wood.jpg" />
-  </ItemGroup>
-
 </Project>

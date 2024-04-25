@@ -30,11 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbxWidth = new System.Windows.Forms.TextBox();
+            this.tbxHeight = new System.Windows.Forms.TextBox();
             this.lbxMaterial = new System.Windows.Forms.ListBox();
             this.pbxMaterial = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btResult = new System.Windows.Forms.Button();
             this.lbResult = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMaterial)).BeginInit();
             this.SuspendLayout();
@@ -59,21 +59,21 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Высота";
             // 
-            // textBox1
+            // tbxWidth
             // 
-            this.textBox1.Location = new System.Drawing.Point(110, 7);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 32);
-            this.textBox1.TabIndex = 2;
+            this.tbxWidth.Location = new System.Drawing.Point(110, 8);
+            this.tbxWidth.Margin = new System.Windows.Forms.Padding(5);
+            this.tbxWidth.Name = "tbxWidth";
+            this.tbxWidth.Size = new System.Drawing.Size(154, 32);
+            this.tbxWidth.TabIndex = 2;
             // 
-            // textBox2
+            // tbxHeight
             // 
-            this.textBox2.Location = new System.Drawing.Point(110, 62);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(154, 32);
-            this.textBox2.TabIndex = 3;
+            this.tbxHeight.Location = new System.Drawing.Point(110, 62);
+            this.tbxHeight.Margin = new System.Windows.Forms.Padding(5);
+            this.tbxHeight.Name = "tbxHeight";
+            this.tbxHeight.Size = new System.Drawing.Size(154, 32);
+            this.tbxHeight.TabIndex = 3;
             // 
             // lbxMaterial
             // 
@@ -85,29 +85,32 @@
             "Дерево",
             "Бамбук"});
             this.lbxMaterial.Location = new System.Drawing.Point(16, 120);
-            this.lbxMaterial.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.lbxMaterial.Margin = new System.Windows.Forms.Padding(5);
             this.lbxMaterial.Name = "lbxMaterial";
             this.lbxMaterial.Size = new System.Drawing.Size(248, 254);
             this.lbxMaterial.TabIndex = 4;
+            this.lbxMaterial.SelectedIndexChanged += new System.EventHandler(this.lbxMaterial_SelectedIndexChanged);
             // 
             // pbxMaterial
             // 
-            this.pbxMaterial.Location = new System.Drawing.Point(275, 7);
-            this.pbxMaterial.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pbxMaterial.Location = new System.Drawing.Point(275, 8);
+            this.pbxMaterial.Margin = new System.Windows.Forms.Padding(5);
             this.pbxMaterial.Name = "pbxMaterial";
             this.pbxMaterial.Size = new System.Drawing.Size(403, 368);
+            this.pbxMaterial.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxMaterial.TabIndex = 5;
             this.pbxMaterial.TabStop = false;
             // 
-            // button1
+            // btResult
             // 
-            this.button1.Location = new System.Drawing.Point(16, 399);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(249, 130);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Подсчитать";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btResult.Location = new System.Drawing.Point(16, 399);
+            this.btResult.Margin = new System.Windows.Forms.Padding(5);
+            this.btResult.Name = "btResult";
+            this.btResult.Size = new System.Drawing.Size(249, 130);
+            this.btResult.TabIndex = 6;
+            this.btResult.Text = "Подсчитать";
+            this.btResult.UseVisualStyleBackColor = true;
+            this.btResult.Click += new System.EventHandler(this.btResult_Click);
             // 
             // lbResult
             // 
@@ -124,16 +127,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(717, 552);
             this.Controls.Add(this.lbResult);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btResult);
             this.Controls.Add(this.pbxMaterial);
             this.Controls.Add(this.lbxMaterial);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbxHeight);
+            this.Controls.Add(this.tbxWidth);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Жалюзи";
             ((System.ComponentModel.ISupportInitialize)(this.pbxMaterial)).EndInit();
             this.ResumeLayout(false);
@@ -145,11 +149,11 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox tbxWidth;
+        private TextBox tbxHeight;
         private ListBox lbxMaterial;
         private PictureBox pbxMaterial;
-        private Button button1;
+        private Button btResult;
         private Label lbResult;
     }
 }
