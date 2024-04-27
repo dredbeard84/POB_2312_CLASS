@@ -59,7 +59,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema26_2", "Thema25_4\Them
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema26_3", "Thema25_5\Thema26_3.csproj", "{23586183-D026-4AD1-B5B1-C2689F2FF077}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thema27 методы", "Thema27 методы\Thema27 методы.csproj", "{6FC2DBC8-D0DD-41B6-9EDD-9924CB15DA5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema27 методы", "Thema27 методы\Thema27 методы.csproj", "{6FC2DBC8-D0DD-41B6-9EDD-9924CB15DA5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayLibrary", "ArrayLibrary\ArrayLibrary.csproj", "{B29E481A-227F-4EF8-B550-765376C53019}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -183,6 +185,10 @@ Global
 		{6FC2DBC8-D0DD-41B6-9EDD-9924CB15DA5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FC2DBC8-D0DD-41B6-9EDD-9924CB15DA5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FC2DBC8-D0DD-41B6-9EDD-9924CB15DA5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B29E481A-227F-4EF8-B550-765376C53019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B29E481A-227F-4EF8-B550-765376C53019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B29E481A-227F-4EF8-B550-765376C53019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B29E481A-227F-4EF8-B550-765376C53019}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
