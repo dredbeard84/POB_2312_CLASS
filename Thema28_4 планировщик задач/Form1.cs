@@ -47,11 +47,14 @@ namespace Thema28_4_планировщик_задач
         }
         private void lbxTask_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int index = lbxTask.SelectedIndex;
-            MyTask currentTask = myTasks[index];
-            tbxTask.Text = currentTask.getTaskName();
-            lbxPriority.Text = currentTask.getPriority();
-            dtpTaskDate.Value = currentTask.getTaskDateTime();
+            if (lbxTask.SelectedIndex != -1)
+            {
+                int index = lbxTask.SelectedIndex;
+                MyTask currentTask = myTasks[index];
+                tbxTask.Text = currentTask.getTaskName();
+                lbxPriority.Text = currentTask.getPriority();
+                dtpTaskDate.Value = currentTask.getTaskDateTime();
+            }
         }
     }
 }
