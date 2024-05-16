@@ -45,8 +45,7 @@
 //Console.Write("Введите число: ");
 //int num = int.Parse(Console.ReadLine());
 //long Fact = 1;
-//int i = 1;
-//while (i <= num) Fact *= i++;
+//for (int i = 1; i <= num; Fact *= i++) ;
 //Console.WriteLine($"Факториал {num} = {Fact}");
 
 // 7. Напишите программу, которая находит сумму всех чисел от 1 до 100 и выводит результат на экран.
@@ -63,7 +62,26 @@
 
 // 9. Напишите программу, которая проверяет, является ли введённое пользователем число простым (имеет только два делителя - 1 и само число).
 
+//Console.Write("Введите целое число: ");
+//int n = int.Parse(Console.ReadLine());
+//int k = 0;
+//for (int i = 2; i < n; i++)
+//{
+//    if (n % i == 0) k++;
+//}
+//if (k == 0) Console.WriteLine("Число простое");
+//else Console.WriteLine("Число не является простым");
+
 // 10. Напишите программу, которая находит среднее арифметическое трёх чисел, введённых пользователем, и выводит результат на экран.
+
+//Console.Write("Введите 1-е число: ");
+//double num1 = double.Parse(Console.ReadLine());
+//Console.Write("Введите 2-е число: ");
+//double num2 = double.Parse(Console.ReadLine());
+//Console.Write("Введите 3-е число: ");
+//double num3 = double.Parse(Console.ReadLine());
+//double avg = (num1 + num2 + num3) / 3;
+//Console.WriteLine($"Среднее арифметическое: {avg:F2}");
 
 // 11. Напишите программу, которая находит наименьшее число из трёх введённых пользователем чисел и выводит его на экран.
 
@@ -86,14 +104,25 @@
 
 //Console.Write("Введите слово: ");
 //string str = Console.ReadLine();
-//string rts = "";
-//for (int i = str.Length - 1; i >= 0; i--) rts += str[i];
-//if (str == rts) Console.Write("Палиндром");
-//else Console.Write("Не палиндром");
+//string reverse = "";
+//for (int i = str.Length - 1; i >= 0; i--) reverse += str[i];
+//if (str == reverse) Console.Write("Палиндром");
+//else Console.WriteLine("Не палиндром");
 
 //	“Любитель”
 
 // 14. Напишите программу, которая определяет, является ли введённое пользователем число совершенным (сумма всех делителей числа равна самому числу).
+
+//Console.Write("Введите число: ");
+//int num;
+//int.TryParse(Console.ReadLine()!, out num);
+//int sum = 0;
+//for (int i = 1; i < num; i++)
+//{
+//    if (num % i == 0) sum += i;
+//}
+//if (sum == num) Console.WriteLine("Число совершенное");
+//else Console.WriteLine("Число несовершенное");
 
 // 15. Напишите программу, которая находит все простые числа от 1 до 100 и выводит их на экран.
 
