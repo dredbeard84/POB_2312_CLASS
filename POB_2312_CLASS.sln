@@ -71,9 +71,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema28_3 генерато�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema28_4 планировщик задач", "Thema28_4 планировщик задач\Thema28_4 планировщик задач.csproj", "{902FF1B5-62F2-40D8-AC9A-C409D809689F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thema29 Enum", "Thema29\Thema29 Enum.csproj", "{9D2D86EA-10E5-459B-B031-1D14BEEA53F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema29 Enum", "Thema29\Thema29 Enum.csproj", "{9D2D86EA-10E5-459B-B031-1D14BEEA53F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thema30 срез знаний", "Thema30 срез знаний\Thema30 срез знаний.csproj", "{BBD10601-A522-4AB9-8B0A-C4A029AD41B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema30 срез знаний", "Thema30 срез знаний\Thema30 срез знаний.csproj", "{BBD10601-A522-4AB9-8B0A-C4A029AD41B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thema31 List", "Thema31 List\Thema31 List.csproj", "{9B937A29-56D8-4CB3-8026-B7AB69AED0AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -225,6 +227,10 @@ Global
 		{BBD10601-A522-4AB9-8B0A-C4A029AD41B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBD10601-A522-4AB9-8B0A-C4A029AD41B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBD10601-A522-4AB9-8B0A-C4A029AD41B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B937A29-56D8-4CB3-8026-B7AB69AED0AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B937A29-56D8-4CB3-8026-B7AB69AED0AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B937A29-56D8-4CB3-8026-B7AB69AED0AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B937A29-56D8-4CB3-8026-B7AB69AED0AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
