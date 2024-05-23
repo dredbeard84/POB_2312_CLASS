@@ -81,6 +81,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema31_2", "Thema31_2\Them
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thema32 дерево", "Thema32 дерево\Thema32 дерево.csproj", "{367C5455-A217-4137-99AC-598BDAF8035E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thema32_1", "Thema32_1\Thema32_1.csproj", "{1FF48427-F25C-4516-AC15-8D9E7E795211}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -243,6 +245,10 @@ Global
 		{367C5455-A217-4137-99AC-598BDAF8035E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{367C5455-A217-4137-99AC-598BDAF8035E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{367C5455-A217-4137-99AC-598BDAF8035E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FF48427-F25C-4516-AC15-8D9E7E795211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF48427-F25C-4516-AC15-8D9E7E795211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF48427-F25C-4516-AC15-8D9E7E795211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF48427-F25C-4516-AC15-8D9E7E795211}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
