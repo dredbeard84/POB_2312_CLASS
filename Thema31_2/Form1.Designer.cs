@@ -28,31 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.listBoxTitle = new System.Windows.Forms.ListBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.удалитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listBoxAuthor = new System.Windows.Forms.ListBox();
             this.listBoxYear = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxTitle = new System.Windows.Forms.TextBox();
+            this.TextBoxTitle = new System.Windows.Forms.TextBox();
             this.textBoxAuthor = new System.Windows.Forms.TextBox();
             this.textBoxYear = new System.Windows.Forms.TextBox();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonList = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabelCountBook = new System.Windows.Forms.ToolStripStatusLabel();
-            this.textBoxFiltr = new System.Windows.Forms.TextBox();
+            this.TextBoxFiltr = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listBoxTitle
             // 
+            this.listBoxTitle.ContextMenuStrip = this.contextMenuStrip1;
             this.listBoxTitle.FormattingEnabled = true;
             this.listBoxTitle.ItemHeight = 21;
             this.listBoxTitle.Location = new System.Drawing.Point(12, 54);
             this.listBoxTitle.Name = "listBoxTitle";
             this.listBoxTitle.Size = new System.Drawing.Size(200, 256);
             this.listBoxTitle.TabIndex = 0;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.удалитьToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            // 
+            // удалитьToolStripMenuItem
+            // 
+            this.удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
+            this.удалитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.удалитьToolStripMenuItem.Text = "Удалить";
+            this.удалитьToolStripMenuItem.Click += new System.EventHandler(this.удалитьToolStripMenuItem_Click);
             // 
             // listBoxAuthor
             // 
@@ -99,12 +118,12 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Год издания";
             // 
-            // textBoxTitle
+            // TextBoxTitle
             // 
-            this.textBoxTitle.Location = new System.Drawing.Point(630, 33);
-            this.textBoxTitle.Name = "textBoxTitle";
-            this.textBoxTitle.Size = new System.Drawing.Size(200, 29);
-            this.textBoxTitle.TabIndex = 6;
+            this.TextBoxTitle.Location = new System.Drawing.Point(630, 33);
+            this.TextBoxTitle.Name = "TextBoxTitle";
+            this.TextBoxTitle.Size = new System.Drawing.Size(200, 29);
+            this.TextBoxTitle.TabIndex = 6;
             // 
             // textBoxAuthor
             // 
@@ -112,7 +131,6 @@
             this.textBoxAuthor.Name = "textBoxAuthor";
             this.textBoxAuthor.Size = new System.Drawing.Size(200, 29);
             this.textBoxAuthor.TabIndex = 7;
-            this.textBoxAuthor.TextChanged += new System.EventHandler(this.textBoxAuthor_TextChanged);
             // 
             // textBoxYear
             // 
@@ -123,18 +141,19 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(680, 246);
+            this.buttonAdd.Location = new System.Drawing.Point(680, 204);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(150, 29);
+            this.buttonAdd.Size = new System.Drawing.Size(150, 50);
             this.buttonAdd.TabIndex = 9;
             this.buttonAdd.Text = "Добавить книгу";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonList
             // 
-            this.buttonList.Location = new System.Drawing.Point(680, 281);
+            this.buttonList.Location = new System.Drawing.Point(680, 260);
             this.buttonList.Name = "buttonList";
-            this.buttonList.Size = new System.Drawing.Size(150, 29);
+            this.buttonList.Size = new System.Drawing.Size(150, 50);
             this.buttonList.TabIndex = 10;
             this.buttonList.Text = "Выгрузить список";
             this.buttonList.UseVisualStyleBackColor = true;
@@ -155,25 +174,26 @@
             this.toolStripStatusLabelCountBook.Size = new System.Drawing.Size(103, 17);
             this.toolStripStatusLabelCountBook.Text = "Количество книг:";
             // 
-            // textBoxFiltr
+            // TextBoxFiltr
             // 
-            this.textBoxFiltr.Location = new System.Drawing.Point(12, 12);
-            this.textBoxFiltr.Name = "textBoxFiltr";
-            this.textBoxFiltr.Size = new System.Drawing.Size(612, 29);
-            this.textBoxFiltr.TabIndex = 12;
+            this.TextBoxFiltr.Location = new System.Drawing.Point(12, 12);
+            this.TextBoxFiltr.Name = "TextBoxFiltr";
+            this.TextBoxFiltr.Size = new System.Drawing.Size(612, 29);
+            this.TextBoxFiltr.TabIndex = 12;
+            this.TextBoxFiltr.TextChanged += new System.EventHandler(this.TextBoxFiltr_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 342);
-            this.Controls.Add(this.textBoxFiltr);
+            this.Controls.Add(this.TextBoxFiltr);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.buttonList);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.textBoxYear);
             this.Controls.Add(this.textBoxAuthor);
-            this.Controls.Add(this.textBoxTitle);
+            this.Controls.Add(this.TextBoxTitle);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -181,9 +201,12 @@
             this.Controls.Add(this.listBoxAuthor);
             this.Controls.Add(this.listBoxTitle);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Учёт библиотечных книг";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -199,13 +222,15 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBoxTitle;
+        private TextBox TextBoxTitle;
         private TextBox textBoxAuthor;
         private TextBox textBoxYear;
         private Button buttonAdd;
         private Button buttonList;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel toolStripStatusLabelCountBook;
-        private TextBox textBoxFiltr;
+        private TextBox TextBoxFiltr;
+        private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem удалитьToolStripMenuItem;
     }
 }

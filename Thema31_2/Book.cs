@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Thema31_2
 {
-    internal class Book
+    public class Book
     {
         private string title;
         private string author;

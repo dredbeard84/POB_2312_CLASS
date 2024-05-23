@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Thema31_2
 {
-    internal class Library
+    
+    public class Library
     {
         private List<Book> list;
         public Library()
@@ -24,5 +25,17 @@ namespace Thema31_2
         }
         public int getCount() => list.Count;
         public List<Book> getBooks() => list;
+        public List<Book> getBooksByCriteria(string name)
+        {
+            List<Book> books = list.Where(p => p.getTitle().StartsWith(name) || 
+                                               p.getAuthor().StartsWith(name)).ToList();
+            if (books.Count == 0)
+            {
+                int year;
+                int.TryParse(Console.ReadLine(), out year);
+                books = list.Where(p => p.getYear() == year).ToList();
+            }
+            return books;
+        }
     }
 }
