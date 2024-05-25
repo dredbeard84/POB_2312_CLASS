@@ -30,24 +30,17 @@
 
 //Console.Write("Введите число: ");
 //int num = int.Parse(Console.ReadLine());
-//string res = (num % 2 == 0) ? "чётное" : "нечётное";
-//Console.WriteLine($"Число {res}");
+//Console.WriteLine((num % 2 == 0) ? "Число чётное" : "Число нечётное");
 
 
 // 5. Напишите программу, которая находит наибольшее число из трёх введённых пользователем чисел и выводит его на экран.
 
 //Console.WriteLine("Введите 3 числа: ");
-//int num1 = int.Parse(Console.ReadLine());
-//int num2 = int.Parse(Console.ReadLine());
-//int num3 = int.Parse(Console.ReadLine());
-//Console.Write("Наибольшее число: ");
-//if (num1 > num2 && num1 > num3)
-//    Console.WriteLine(num1);
-//else if (num1 < num2 && num2 > num3)
-//    Console.WriteLine(num2);
-//else
-//    Console.WriteLine(num3);
-
+//int num1 = int.Parse(Console.ReadLine()!);
+//int num2 = int.Parse(Console.ReadLine()!);
+//int num3 = int.Parse(Console.ReadLine()!);
+//int max = (num1 > num2 && num1 > num3) ? num1 : (num1 < num2 && num2 > num3) ? num2 : num3;
+//Console.Write($"Наибольшее число: {max}");
 
 
 //		“База”
@@ -113,10 +106,10 @@
 // 11. Напишите программу, которая находит наименьшее число из трёх введённых пользователем чисел и выводит его на экран.
 
 //Console.WriteLine("Введите 3 числа: ");
-//int a = int.Parse(Console.ReadLine());
-//int b = int.Parse(Console.ReadLine());
-//int c = int.Parse(Console.ReadLine());
-//int min = (a < b && a < c) ? a : (a > b && b < c) ? b : c;
+//int num1 = int.Parse(Console.ReadLine());
+//int num2 = int.Parse(Console.ReadLine());
+//int num3 = int.Parse(Console.ReadLine());
+//int min = (num1 < num2 && num1 < num3) ? num1 : (num1 > num2 && num2 < num3) ? num2 : num3;
 //Console.Write($"Наименьшее число: {min}");
 
 
@@ -132,21 +125,14 @@
 
 // 13. Напишите программу, которая определяет, является ли введённое пользователем число палиндромом (читается одинаково слева направо и справа налево).
 
-//Console.Write("Введите слово: ");
-//string userString = Console.ReadLine();
-//string reverseString = "";
-//for (int i = userString.Length - 1; i >= 0; i--)
+//Console.Write("Введите число: ");
+//string userNum = Console.ReadLine()!;
+//string reverseNum = "";
+//for (int i = userNum.Length - 1; i >= 0; i--)
 //{
-//    reverseString += userString[i];
+//    reverseNum += userNum[i];
 //}
-//if (userString == reverseString)
-//{
-//    Console.WriteLine("Палиндром");
-//}
-//else
-//{
-//    Console.WriteLine("Не палиндром");
-//}
+//Console.WriteLine((userNum == reverseNum) ? "Палиндром" : "Не палиндром");
 
 
 //	“Любитель”
