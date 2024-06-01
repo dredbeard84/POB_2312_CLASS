@@ -83,7 +83,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema32 дерево", "The
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema32_1", "Thema32_1\Thema32_1.csproj", "{1FF48427-F25C-4516-AC15-8D9E7E795211}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thema33_поля", "Thema33_поля\Thema33_поля.csproj", "{6359B4A8-6DCB-4648-96E4-B10BC96812A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema33_поля", "Thema33_поля\Thema33_поля.csproj", "{6359B4A8-6DCB-4648-96E4-B10BC96812A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thema34_FileManager", "Thema34_FileManager\Thema34_FileManager.csproj", "{EBF5B255-3007-4ADC-A57F-A3FC8EDE1C2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -255,6 +257,10 @@ Global
 		{6359B4A8-6DCB-4648-96E4-B10BC96812A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6359B4A8-6DCB-4648-96E4-B10BC96812A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6359B4A8-6DCB-4648-96E4-B10BC96812A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBF5B255-3007-4ADC-A57F-A3FC8EDE1C2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBF5B255-3007-4ADC-A57F-A3FC8EDE1C2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBF5B255-3007-4ADC-A57F-A3FC8EDE1C2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBF5B255-3007-4ADC-A57F-A3FC8EDE1C2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
