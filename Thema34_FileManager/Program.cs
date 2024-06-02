@@ -6,7 +6,9 @@ namespace Thema34_FileManager
     {
         private const int WINDOW_WIDTH = 120;
         private const int WINDOW_HEIGHT = 40;
+
         private static string _currentDir = Directory.GetCurrentDirectory();
+
         static void Main(string[] args)
         {
             Console.SetWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT);
@@ -114,6 +116,7 @@ namespace Thema34_FileManager
         public static void DrawInputCommandField(string currentDir, int left, int top, int width, int height)
         {
             DrawConsole(left, top, width, height);
+
             Console.SetCursorPosition(1, 34);
             Console.Write($"{currentDir}$");
         }
@@ -127,6 +130,7 @@ namespace Thema34_FileManager
                 Console.Write("─");
             }
             Console.WriteLine("┐");
+
             for (int i = 0; i < height - 2; i++)
             {
                 Console.Write("│");
@@ -136,6 +140,7 @@ namespace Thema34_FileManager
                 }
                 Console.WriteLine("│");
             }
+
             Console.Write("└");
             for (int j = 0; j < width - 2; j++)
             {
