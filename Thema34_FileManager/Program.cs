@@ -1,14 +1,13 @@
 ﻿using System.Text;
 
-namespace Thema34_FileManager
+namespace FileManager_2312_Nepomiluev
 {
     internal class Program
     {
         private const int WINDOW_WIDTH = 120;
         private const int WINDOW_HEIGHT = 40;
-
         private static string _currentDir = Directory.GetCurrentDirectory();
-
+        private static string _tree = "";
         static void Main(string[] args)
         {
             Console.SetWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT);
@@ -28,6 +27,88 @@ namespace Thema34_FileManager
             DrawInputCommandField(_currentDir, 0, 33, WINDOW_WIDTH, 3);
             CommandInputProcess();
         }
+
+        public static void DrawTree(int page, string startPath)
+        {
+            DirectoryInfo startDir = new DirectoryInfo(startPath);
+            GetTree(startDir, "", true);
+
+            DrawConsole(0, 0, WINDOW_WIDTH, 25);
+
+            string[] lines = _tree.Split('\n');
+
+            int linesAtPage = 23;
+            int pagesQuantity = (int)Math.Ceiling(lines.Length / (double)linesAtPage);
+
+            string[,] pages = new string[pagesQuantity, linesAtPage];
+
+            if (lines.Length >= linesAtPage)
+            {
+                for (int i = 0; i < pages.GetLength(0); i++)
+                {
+                    int cell = 0;
+                    for (int j = linesAtPage * i; j < linesAtPage * (i + 1); j++)
+                    {
+                        if (lines[j] == "")
+                        {
+                            break;
+                        }
+
+                        pages[i, cell] = lines[j];
+                        cell++;
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < pages.GetLength(0); i++)
+                {
+                    int cell = 0;
+                    for (int j = linesAtPage * i; j < lines.Length; j++)
+                    {
+                        pages[i, cell] = lines[j];
+                        cell++;
+                    }
+                }
+            }
+
+            for (int i = 0; i < pages.GetLength(1); i++)
+            {
+                Console.SetCursorPosition(1, i + 1);
+                Console.WriteLine(pages[page - 1, i]);
+            }
+
+            string currentPage = $"[ {page} / {pages.GetLength(0)} ]";
+            Console.SetCursorPosition(WINDOW_WIDTH / 2 - currentPage.Length / 2, 25);
+            Console.WriteLine(currentPage);
+
+            _tree = string.Empty;
+        }
+
+        public static void GetTree(DirectoryInfo currentDir, string indent, bool lastDirectory)
+        {
+            _tree += indent;
+
+            if (lastDirectory)
+            {
+                _tree += "└──";
+                indent += "   ";
+            }
+            else
+            {
+                _tree += "├──";
+                indent += "│  ";
+            }
+
+            _tree += currentDir.Name + '\n';
+
+            DirectoryInfo[] subDirectories = currentDir.GetDirectories();
+            for (int i = 0; i < subDirectories.Length; i++)
+            {
+                GetTree(subDirectories[i], indent, i == subDirectories.Length - 1);
+            }
+        }
+
         public static void CommandParser(string command)
         {
             string[] commandParts = command.Split(" ");
@@ -59,6 +140,24 @@ namespace Thema34_FileManager
                                 _currentDir += commandParts[1];
                             }
                         }
+                    }
+                    break;
+
+                case "tree":
+                    if (commandParts.Length == 1)
+                    {
+                        DrawTree(1, _currentDir);
+                    }
+                    else if (commandParts.Length == 3)
+                    {
+                        if (commandParts[1] == "-p")
+                        {
+                            DrawTree(int.Parse(commandParts[2]), _currentDir);
+                        }
+                    }
+                    else
+                    {
+
                     }
                     break;
             }
@@ -116,7 +215,6 @@ namespace Thema34_FileManager
         public static void DrawInputCommandField(string currentDir, int left, int top, int width, int height)
         {
             DrawConsole(left, top, width, height);
-
             Console.SetCursorPosition(1, 34);
             Console.Write($"{currentDir}$");
         }
@@ -130,7 +228,6 @@ namespace Thema34_FileManager
                 Console.Write("─");
             }
             Console.WriteLine("┐");
-
             for (int i = 0; i < height - 2; i++)
             {
                 Console.Write("│");
@@ -140,7 +237,6 @@ namespace Thema34_FileManager
                 }
                 Console.WriteLine("│");
             }
-
             Console.Write("└");
             for (int j = 0; j < width - 2; j++)
             {
@@ -151,4 +247,19 @@ namespace Thema34_FileManager
     }
 }
 
-// Дома pwd в среднем окне
+// дома:
+// ls (выводит все папки)
+// ls -p (в столбик постранично) в tree
+// pwd (вывод текущего каталога) в инфо через SetCursorPosition
+// mkdir <Name> (создание папки) в инфо
+// touch (создание файлов)
+// ошибки в инфо
+// удаление файлов
+// копирование файлов
+// перемещение файлов и каталогов
+// информация в tree
+// логирование в файл (в commandParser())
+// оформить Readme.txt
+// --help
+
+//Directory.Delete("", true);// через рекурсию
