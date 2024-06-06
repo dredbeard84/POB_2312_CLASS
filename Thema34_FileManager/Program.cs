@@ -148,6 +148,7 @@ namespace FileManager_2312_Nepomiluev
                     {
                         DrawTree(1, _currentDir);
                     }
+
                     else if (commandParts.Length == 3)
                     {
                         if (commandParts[1] == "-p")
@@ -155,6 +156,7 @@ namespace FileManager_2312_Nepomiluev
                             DrawTree(int.Parse(commandParts[2]), _currentDir);
                         }
                     }
+
                     else
                     {
 
