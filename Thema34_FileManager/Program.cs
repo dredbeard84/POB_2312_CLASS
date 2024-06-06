@@ -166,6 +166,7 @@ namespace FileManager_2312_Nepomiluev
 
             UpdateConsole();
         }
+
         public static void CommandInputProcess()
         {
             StringBuilder command = new StringBuilder();
@@ -190,6 +191,7 @@ namespace FileManager_2312_Nepomiluev
                         Console.Write("$");
                         continue;
                     }
+
                     else
                     {
                         Console.Write(" ");
@@ -197,12 +199,14 @@ namespace FileManager_2312_Nepomiluev
                         command.Remove(command.Length - 1, 1);
                     }
                 }
+
                 else if (left == WINDOW_WIDTH - 2)
                 {
                     Console.SetCursorPosition(left - 1, top);
                     Console.Write(" ");
                     Console.SetCursorPosition(left - 1, top);
                 }
+
                 else
                 {
                     command.Append(pressedKey);
@@ -214,12 +218,14 @@ namespace FileManager_2312_Nepomiluev
 
             CommandParser(command.ToString());
         }
+
         public static void DrawInputCommandField(string currentDir, int left, int top, int width, int height)
         {
             DrawConsole(left, top, width, height);
             Console.SetCursorPosition(1, 34);
             Console.Write($"{currentDir}$");
         }
+
         public static void DrawConsole(int left, int top, int width, int height)
         {
             Console.SetCursorPosition(left, top);
@@ -230,6 +236,7 @@ namespace FileManager_2312_Nepomiluev
                 Console.Write("─");
             }
             Console.WriteLine("┐");
+
             for (int i = 0; i < height - 2; i++)
             {
                 Console.Write("│");
@@ -240,6 +247,7 @@ namespace FileManager_2312_Nepomiluev
                 Console.WriteLine("│");
             }
             Console.Write("└");
+
             for (int j = 0; j < width - 2; j++)
             {
                 Console.Write("─");
