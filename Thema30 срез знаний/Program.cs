@@ -190,11 +190,11 @@
 
 // 17. Напишите программу, которая проверяет, является ли введённое пользователем слово панграммой (содержит все буквы алфавита).
 
-//Console.Write("Введите слова: ");
+//Console.Write("Введите слово: ");
 //string userWord = Console.ReadLine()!;
 //string abc = "abcdefghijklmnopqrstuvwxyz";
 //bool isPangram = abc.All(userWord.Contains);
-//Console.WriteLine(isPangram);
+//Console.WriteLine(isPangram ? "панграмма" : "не панграмма");
 
 
 // 18. Напишите программу, которая находит наименьшее общее кратное (НОК) двух чисел, введённых пользователем, и выводит результат на экран.
@@ -325,48 +325,36 @@
 
 // 24. Проверить, является ли массив “палиндромом”. Да да, числовой массив.
 
-Console.Write("Введите размер массива: ");
-int n = int.Parse(Console.ReadLine());
-int[] mas = new int[n];
-Random random = new Random();
-for (int i = 0; i < mas.Length; i++)
-{
-    mas[i] = random.Next(1, 2);
-    Console.Write($"{mas[i]} ");
-}
-Console.WriteLine();
-string strMas = "";
-string reverseMas = "";
-foreach (int i in mas)
-{
-    strMas += i.ToString() + " ";
-}
+//Console.Write("Введите размер массива: ");
+//int n = int.Parse(Console.ReadLine());
+//int[] mas = new int[n];
+//Random random = new Random();
+//string stringMas = "";
 //for (int i = 0; i < mas.Length; i++)
 //{
-//    strMas += mas[i].ToString() + " ";
+//    mas[i] = random.Next(1, 3);
+//    Console.Write($"{mas[i]} ");
+//    stringMas += mas[i].ToString();
 //}
-for (int i = strMas.Length - 1; i >= 0; i--)
-{
-    reverseMas += strMas[i];
-}
-if (strMas == reverseMas)
-{
-    Console.WriteLine("Палиндром");
-}
-else
-{
-    Console.WriteLine("Не палиндром");
-}
-//Console.WriteLine((strMas == reverseMas) ? "Палиндром" : "Не палиндром");
+//Console.WriteLine();
+//string reverseMas = "";
+//for (int i = stringMas.Length - 1; i >= 0; i--)
+//{
+//    reverseMas += stringMas[i];
+//}
+//Console.WriteLine((stringMas == reverseMas) ? "Палиндром" : "Не палиндром");
 
 
 // 25. Создайте двумерный массив длиной 5х5 элементов, вручную заполните его числами от -10 до 10.
 
-//int[,] mas = { { -10, -9, -8, -7, -6 },
-//			   {  -5, -4, -3, -2, -1 },
-//			   {   0,  1,  2,  3,  4 },
-//			   {   5,  6,  7,  8,  9 },
-//			   {  10, -9, -5,  3,  1 } };
+//int[,] mas =
+//	{
+//		{ -10, -9, -8, -7, -6 },
+//		{  -5, -4, -3, -2, -1 },
+//		{   0,  1,  2,  3,  4 },
+//		{   5,  6,  7,  8,  9 },
+//		{  10, -9, -5,  3,  1 }
+//	};
 
 
 // 26. Вычислить сумму элементов в каждой строке.
