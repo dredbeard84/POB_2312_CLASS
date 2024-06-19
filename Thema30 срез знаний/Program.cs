@@ -16,11 +16,12 @@
 
 // 3. Напишите программу, которая находит сумму двух чисел, введённых пользователем, и выводит результат на экран.
 
+//int n = 2;
 //int sum = 0;
-//for (int i = 1; i <= 2; i++)
+//for (int i = 1; i <= n; i++)
 //{
 //    Console.Write($"Введите {i}-е число: ");
-//    int num = int.Parse(Console.ReadLine());
+//    int num = int.Parse(Console.ReadLine()!);
 //    sum += num;
 //}
 //Console.WriteLine($"Сумма чисел: {sum}");
@@ -93,14 +94,15 @@
 
 // 10. Напишите программу, которая находит среднее арифметическое трёх чисел, введённых пользователем, и выводит результат на экран.
 
+//int n = 3;
 //double sum = 0;
-//for (int i = 1; i <= 3; i++)
+//for (int i = 1; i <= n; i++)
 //{
 //    Console.Write($"Введите {i}-е число: ");
 //    double num = double.Parse(Console.ReadLine());
 //    sum += num;
 //}
-//Console.WriteLine($"Среднее арифметическое чисел: {sum / 3:F2}");
+//Console.WriteLine($"Среднее арифметическое чисел: {sum / n:F2}");
 
 
 // 11. Напишите программу, которая находит наименьшее число из трёх введённых пользователем чисел и выводит его на экран.
@@ -141,7 +143,8 @@
 // 14. Напишите программу, которая определяет, является ли введённое пользователем число совершенным (сумма всех делителей числа равна самому числу).
 
 //Console.Write("Введите число: ");
-//int num = int.Parse(Console.ReadLine());
+//int num;
+//int.TryParse(Console.ReadLine()!, out num);
 //int sum = 0;
 //for (int i = 1; i < num; i++)
 //{
@@ -150,14 +153,7 @@
 //        sum += i;
 //    }
 //}
-//if (sum == num)
-//{
-//    Console.WriteLine("Число совершенное");// 2, 3, 5, 7, 13, 17, 19, 31, 61, 89, 107
-//}
-//else
-//{
-//    Console.WriteLine("Число несовершенное");
-//}
+//Console.WriteLine((sum == num) ? "Число совершенное" : "Число несовершенное");      // 6, 28, 496, 8128 и т.д.
 
 
 // 15. Напишите программу, которая находит все простые числа от 1 до 100 и выводит их на экран.
@@ -174,7 +170,7 @@
 //    }
 //    if (k == 0)
 //    {
-//        Console.Write(i + " ");// 1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97
+//        Console.Write(i + " ");       // 1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97
 //    }
 //}
 
@@ -189,24 +185,25 @@
 //        sum += i;
 //    }
 //}
-//Console.WriteLine(sum);// 2550
+//Console.WriteLine(sum);       // 2550
 
 
 // 17. Напишите программу, которая проверяет, является ли введённое пользователем слово панграммой (содержит все буквы алфавита).
 
+//Console.Write("Введите слова: ");
+//string userWord = Console.ReadLine()!;
 //string abc = "abcdefghijklmnopqrstuvwxyz";
-//string str = Console.ReadLine();
-//bool isPangram = abc.All(str.Contains);
+//bool isPangram = abc.All(userWord.Contains);
 //Console.WriteLine(isPangram);
 
 
 // 18. Напишите программу, которая находит наименьшее общее кратное (НОК) двух чисел, введённых пользователем, и выводит результат на экран.
 
-//Console.WriteLine("Введите два целых числа: ");
+//Console.WriteLine("Введите два целых положительных числа: ");
 //int m = int.Parse(Console.ReadLine()!);
 //int n = int.Parse(Console.ReadLine()!);
 //int temp = m * n;
-//while (m != 0 && n != 0)// алгоритм Евклида (через деление) от while до nod
+//while (m != 0 && n != 0)        // алгоритм Евклида (через деление) от while до nod
 //{
 //    if (m > n)
 //    {
@@ -219,22 +216,14 @@
 //}
 //int nod = m + n;
 //int nok = temp / nod;
-//if (nok != 0)
-//{
-//    Console.WriteLine($"НОК = {nok}");
-//}
-//else
-//{
-//    Console.WriteLine("Введите целые положительные числа!");
-//}
+//Console.WriteLine((nok != 0) ? $"НОК = {nok}" : "Введите целые положительные числа!");
 
 
 // 19. Напишите программу, которая считывает числа с клавиатуры, пока пользователь не введёт отрицательное число, и выводит сумму введённых положительных чисел на экран.
 
 //Console.WriteLine("Вводите числа: ");
-//int n = 0;
 //int sum = 0;
-//while (n >= 0)
+//for (int n = 0; n >= 0; )
 //{
 //    n = int.Parse(Console.ReadLine());
 //    if (n > 0)
@@ -250,15 +239,15 @@
 
 // 20. Создайте одномерный массив длиной 8 элементов, вручную заполните его числами от -10 до 10.
 
+//Console.WriteLine("Введите 8 чисел от -10 до 10:");
 //int[] mas = new int[8];
-//Console.WriteLine("Введите числа:");
 //for (int i = 0; i < mas.Length; i++)
 //{
-//    mas[i] = int.Parse(Console.ReadLine()!);
+//    mas[i] = int.Parse(Console.ReadLine());
 //}
 //for (int i = 0; i < mas.Length; i++)
 //{
-//    Console.Write(mas[i] + " ");
+//    Console.Write($"{mas[i]} ");
 //}
 
 
@@ -268,34 +257,36 @@
 //int n = int.Parse(Console.ReadLine());
 //int[] mas = new int[n];
 //Random random = new Random();
+//for (int i = 0; i < mas.Length; i++)
+//{
+//    mas[i] = random.Next(1, 20);
+//    Console.Write($"{mas[i]} ");
+//}
+//Console.WriteLine();
 //int sum = 0;
 //for (int i = 0; i < mas.Length; i++)
 //{
-//    mas[i] = random.Next(10, 100);
 //    sum += mas[i];
 //}
-//foreach (int i in mas)
-//{
-//    Console.Write(i + " ");
-//}
-//Console.WriteLine();
 //Console.WriteLine($"Сумма элементов массива = {sum}");
 
 
 // 22. Подсчитать количество чётных чисел в массиве.
 
-//int[] mas = new int[10];
+//Console.Write("Введите размер массива: ");
+//int n = int.Parse(Console.ReadLine());
+//int[] mas = new int[n];
 //Random random = new Random();
 //for (int i = 0; i < mas.Length; i++)
 //{
-//    mas[i] = random.Next(10, 100);
-//    Console.Write(mas[i] + " ");
+//    mas[i] = random.Next(1, 20);
+//    Console.Write($"{mas[i]} ");
 //}
 //Console.WriteLine();
 //int count = 0;
-//foreach (int i in mas)
+//for (int i = 0; i < mas.Length; i++)
 //{
-//    if (i % 2 == 0)
+//    if (mas[i] % 2 == 0)
 //    {
 //        count++;
 //    }
@@ -305,12 +296,14 @@
 
 // 23. Определить наибольший и наименьший элемент в массиве.
 
-//int[] mas = new int[10];
+//Console.Write("Введите размер массива: ");
+//int n = int.Parse(Console.ReadLine());
+//int[] mas = new int[n];
 //Random random = new Random();
 //for (int i = 0; i < mas.Length; i++)
 //{
-//    mas[i] = random.Next(10, 100);
-//    Console.Write(mas[i] + " ");
+//    mas[i] = random.Next(1, 20);
+//    Console.Write($"{mas[i]} ");
 //}
 //Console.WriteLine();
 //int min = mas[0];
@@ -321,7 +314,7 @@
 //    {
 //        max = mas[i];
 //    }
-//    if (mas[i] < min)
+//    else if (mas[i] < min)
 //    {
 //        min = mas[i];
 //    }
@@ -332,32 +325,39 @@
 
 // 24. Проверить, является ли массив “палиндромом”. Да да, числовой массив.
 
-//int[] mas = new int[10];
-//Random random = new Random();
+Console.Write("Введите размер массива: ");
+int n = int.Parse(Console.ReadLine());
+int[] mas = new int[n];
+Random random = new Random();
+for (int i = 0; i < mas.Length; i++)
+{
+    mas[i] = random.Next(1, 2);
+    Console.Write($"{mas[i]} ");
+}
+Console.WriteLine();
+string strMas = "";
+string reverseMas = "";
+foreach (int i in mas)
+{
+    strMas += i.ToString() + " ";
+}
 //for (int i = 0; i < mas.Length; i++)
 //{
-//    mas[i] = random.Next(10, 100);
-//    Console.Write(mas[i] + " ");
+//    strMas += mas[i].ToString() + " ";
 //}
-//Console.WriteLine();
-//string strMas = "";
-//string reverseMas = "";
-//foreach (int i in mas)
-//{
-//    strMas += i.ToString() + " ";
-//}
-//for (int i = strMas.Length - 1; i >= 0; i--)
-//{
-//    reverseMas += strMas[i];
-//}
-//if (strMas == reverseMas)
-//{
-//    Console.WriteLine("Палиндром");
-//}
-//else
-//{
-//    Console.WriteLine("Не палиндром");
-//}
+for (int i = strMas.Length - 1; i >= 0; i--)
+{
+    reverseMas += strMas[i];
+}
+if (strMas == reverseMas)
+{
+    Console.WriteLine("Палиндром");
+}
+else
+{
+    Console.WriteLine("Не палиндром");
+}
+//Console.WriteLine((strMas == reverseMas) ? "Палиндром" : "Не палиндром");
 
 
 // 25. Создайте двумерный массив длиной 5х5 элементов, вручную заполните его числами от -10 до 10.
