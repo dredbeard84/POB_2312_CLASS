@@ -90,7 +90,7 @@
 //else Console.WriteLine("квадрат не поместится в круге");
 
 
-//          08.02.24 класс Random
+// 08.02.24     Lesson 11   класс Random
 
 
 //Console.Write("Введите a: ");
