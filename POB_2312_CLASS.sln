@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson06 преобразо
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson05 константы и литералы", "Lesson5\Lesson05 константы и литералы.csproj", "{572EDA8E-1405-44B1-859B-92F72809AE30}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L01_T02_введение, IDE", "Lesson1\L01_T02_введение, IDE.csproj", "{9DD32C17-232A-4309-9679-7E1861BA686A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L00_T01_введение, IDE", "Lesson1\L00_T01_введение, IDE.csproj", "{9DD32C17-232A-4309-9679-7E1861BA686A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson02", "Lesson2\Lesson02.csproj", "{1D905862-20FB-4FB9-AD40-CDB790419151}"
 EndProject
