@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L10&11_T11_if_else", "Thema
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L12_T12_switch_case", "Thema12 switch\L12_T12_switch_case.csproj", "{01D157B6-362A-4A7A-AC12-0A67C6021909}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema13 do while", "Thema13 циклы\Thema13 do while.csproj", "{15B4E9C3-B402-440E-9A6E-5E34A98ED27A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L13_T13_while", "Thema13 циклы\L13_T13_while.csproj", "{15B4E9C3-B402-440E-9A6E-5E34A98ED27A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema14 for", "Thema14 for\Thema14 for.csproj", "{32D1649A-7448-49BC-94F6-8748132E40B4}"
 EndProject
