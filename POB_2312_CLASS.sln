@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L09_1_(x)", "Lesson9\L09_1_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L09_2", "Lesson10\L09_2.csproj", "{85B87262-710B-40CA-895B-3A81FC8C1EF5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema11 условные операторы", "Thema11\Thema11 условные операторы.csproj", "{807F8C52-67DA-4121-AB7E-DC9F381395A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L10_T11_if_else", "Thema11\L10_T11_if_else.csproj", "{807F8C52-67DA-4121-AB7E-DC9F381395A3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema12 switch", "Thema12 switch\Thema12 switch.csproj", "{01D157B6-362A-4A7A-AC12-0A67C6021909}"
 EndProject
