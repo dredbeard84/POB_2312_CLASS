@@ -2,7 +2,7 @@
 
 
 ////Задача 2.8
-//Console.Write("Введите k: ");// в одну строку
+//Console.Write("Введите количество дней с начала года: ");// в одну строку
 //int k = int.Parse(Console.ReadLine());
 //Console.Write("Введите номер дня недели 1 января: ");
 //int d = int.Parse(Console.ReadLine());

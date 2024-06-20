@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L03_T03_алгоритм_с
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson06 преобразование типов", "Lesson6\Lesson06 преобразование типов.csproj", "{8683913E-EC48-4AF6-B9E1-7FC145507001}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson05 константы и литералы", "Lesson5\Lesson05 константы и литералы.csproj", "{572EDA8E-1405-44B1-859B-92F72809AE30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L05_T05_константы_литералы", "Lesson5\L05_T05_константы_литералы.csproj", "{572EDA8E-1405-44B1-859B-92F72809AE30}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L00_T01_введение, IDE", "Lesson1\L00_T01_введение, IDE.csproj", "{9DD32C17-232A-4309-9679-7E1861BA686A}"
 EndProject
