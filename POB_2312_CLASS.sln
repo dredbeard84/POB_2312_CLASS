@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson03 строки", "Lesson3\Lesson03 строки.csproj", "{11084AF9-3313-4E37-8F66-1A85CA85755E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L03_T03_алгоритм_строки", "Lesson3\L03_T03_алгоритм_строки.csproj", "{11084AF9-3313-4E37-8F66-1A85CA85755E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson06 преобразование типов", "Lesson6\Lesson06 преобразование типов.csproj", "{8683913E-EC48-4AF6-B9E1-7FC145507001}"
 EndProject
