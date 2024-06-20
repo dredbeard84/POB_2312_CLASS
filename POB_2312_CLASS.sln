@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson06 преобразо
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson05 константы и литералы", "Lesson5\Lesson05 константы и литералы.csproj", "{572EDA8E-1405-44B1-859B-92F72809AE30}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson01 введение, IDE", "Lesson1\Lesson01 введение, IDE.csproj", "{9DD32C17-232A-4309-9679-7E1861BA686A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L01_T02_введение, IDE", "Lesson1\L01_T02_введение, IDE.csproj", "{9DD32C17-232A-4309-9679-7E1861BA686A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson02", "Lesson2\Lesson02.csproj", "{1D905862-20FB-4FB9-AD40-CDB790419151}"
 EndProject
@@ -85,7 +85,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema32_1", "Thema32_1\Them
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema33_поля", "Thema33_поля\Thema33_поля.csproj", "{6359B4A8-6DCB-4648-96E4-B10BC96812A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thema34_FileManager", "Thema34_FileManager\Thema34_FileManager.csproj", "{EBF5B255-3007-4ADC-A57F-A3FC8EDE1C2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema34_FileManager", "Thema34_FileManager\Thema34_FileManager.csproj", "{EBF5B255-3007-4ADC-A57F-A3FC8EDE1C2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
