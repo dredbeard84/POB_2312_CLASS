@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L09_2", "Lesson10\L09_2.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L10&11_T11_if_else", "Thema11\L10&11_T11_if_else.csproj", "{807F8C52-67DA-4121-AB7E-DC9F381395A3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema12 switch", "Thema12 switch\Thema12 switch.csproj", "{01D157B6-362A-4A7A-AC12-0A67C6021909}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L12_T12_switch_case", "Thema12 switch\L12_T12_switch_case.csproj", "{01D157B6-362A-4A7A-AC12-0A67C6021909}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thema13 do while", "Thema13 циклы\Thema13 do while.csproj", "{15B4E9C3-B402-440E-9A6E-5E34A98ED27A}"
 EndProject
