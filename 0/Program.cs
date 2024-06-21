@@ -1,13 +1,17 @@
 ﻿Console.Write("Введите максимальное количество задач: ");
-int numberOfTasks = int.Parse(Console.ReadLine());
+int numberOfTasks = int.Parse(Console.ReadLine()!);
 int maxNumberOfTasks = numberOfTasks + 1;
 
 string[,] table = new string[maxNumberOfTasks, 5];
+
+int taskNumber = 0;
 
 Console.Clear();
 
 for (int i = 0; i < table.GetLength(0); i++)
 {
+    taskNumber = i;
+
     for (int j = 0; j < table.GetLength(1); j++)
     {
         table[i, j] = " - ";
@@ -16,11 +20,17 @@ for (int i = 0; i < table.GetLength(0); i++)
         table[0, 2] = "ДАТА";
         table[0, 3] = "ВРЕМЯ";
         table[0, 4] = "ПРИОРИТЕТ";
+        if (i > 0)
+        {
+            table[i, 0] = taskNumber.ToString();
+        }
         Console.Write($"{table[i, j], -10}");
     }
     Console.WriteLine();
 }
 Console.WriteLine();
+
+
 
 Console.WriteLine("Меню:\n" +
     "[1] Добавить\n" +
@@ -28,7 +38,21 @@ Console.WriteLine("Меню:\n" +
     "[3] Изменить\n" +
     "[4] Найти\n" +
     "[5] Выход\n");
+int number = int.Parse(Console.ReadLine()!);
 
+
+switch (number)
+{
+    case 1:
+        {
+            Console.Write("Введите название задачи: ");
+            string name = Console.ReadLine()!;
+            table[taskNumber, 1] = name;
+            taskNumber++;
+            Console.Write($"{table[taskNumber, 1],-10}");
+        }
+        break;
+}
 
 //bool start = true;
 //int count = 0;								// количество задач
