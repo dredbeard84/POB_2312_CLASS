@@ -39,22 +39,26 @@ Console.WriteLine();
 //    "[5] Выход\n");
 //int number = int.Parse(Console.ReadLine()!);
 
-
-Console.Write("Введите название задачи: ");
-string taskName = Console.ReadLine();
-
-for (int i = 0; i < rows; i++)
+do
 {
-    for (int j = 0; j < COLUMNS; j++)
+    Console.Write("Введите название задачи: ");
+    string taskName = Console.ReadLine();
+
+    for (int i = 0; i < rows; i++)
     {
-        table[1, 1] = taskName;
-        Console.Write($"{table[i, j],-10}");
+        for (int j = 0; j < COLUMNS; j++)
+        {
+            table[tasks, 1] = taskName;
+            Console.Write($"{table[i, j],-10}");
+        }
+        Console.WriteLine();
     }
     Console.WriteLine();
-}
-Console.WriteLine();
+    tasks++;
 
-tasks++;
+
+} while (true);
+
 
 
 //Console.Write("Введите максимальное количество задач: ");
