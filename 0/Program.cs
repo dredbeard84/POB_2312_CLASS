@@ -1,24 +1,59 @@
-﻿Console.Title = "Список";
+﻿Console.Title = "Список задач (5 строк)";
 
-const int COLUMNS = 1;
+const int ROWS = 6;
+const int COLUMNS = 2;
 
-Console.WriteLine("Сколько нужно строк?");
-int rows = int.Parse(Console.ReadLine()!);
-Console.WriteLine();
+string[,] table = new string[ROWS, COLUMNS];
 
-string[,] taskList = new string[++rows, COLUMNS];
+int taskNumber = 1;
 
-for (int i = 0; i < rows; i++)
+for (int i = 0; i < ROWS; i++)
 {
     for (int j = 0; j < COLUMNS; j++)
     {
-        taskList[i, j] = " . ";
-        taskList[0, 0] = "НОМЕР";
-        Console.Write($"{taskList[i, j],-10}");
+        table[i, j] = " . ";
+        table[i, 0] = i.ToString();
+        table[0, 0] = "НОМЕР";
+        table[0, 1] = "ЗАДАЧА";
+        Console.Write($"{table[i, j],-10}");
+    }
+    Console.WriteLine();
+    taskNumber++;
+}
+Console.WriteLine();
+
+Console.Write("Задача? ");
+string name = Console.ReadLine();
+table[1, 1] = name;
+
+Console.Clear();
+
+for (int i = 0; i < ROWS; i++)
+{
+    for (int j = 0; j < COLUMNS; j++)
+    {
+        Console.Write($"{table[i, j],-10}");
     }
     Console.WriteLine();
 }
 Console.WriteLine();
+
+
+
+//for (int i = 0; i < ROWS; i++)
+//{
+//    for (int j = 0; j < COLUMNS; j++)
+//    {
+//        table[0, 0] = "НОМЕР";
+//        Console.Write($"{table[i, j],-10}");
+//        number++;
+//    }
+//    Console.WriteLine();
+//}
+//Console.WriteLine();
+
+
+
 
 
 
