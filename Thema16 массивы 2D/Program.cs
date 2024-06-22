@@ -188,25 +188,30 @@
 //Console.WriteLine();
 
 
-// # 4. лампочка (вариант преподавателя, в домашке - мой)
+// # 4. лампочка (вариант преподавателя (отредактированный), в домашке - мой)
 
-string[,] mas ={
-    {"","","x","x","",""},
-    {"","x","","","x",""},
-    {"x","","","","","x"},
-    {"","x","x","x","x",""},
-    {"","","x","x","",""},
-    {"","","x","x","",""},
-    {"","","x","x","",""},
-    {"","","x","x","",""},
-    {"","","x","x","",""},
-    {"","","x","x","",""},
-    {"","x","x","x","x",""}};
-string answer = "no";
+string[,] mas =
+{
+    {" ", " ", "x", "x", " ", " "},
+    {" ", "x", " ", " ", "x", " "},
+    {"x", " ", " ", " ", " ", "x"},
+    {" ", "x", "x", "x", "x", " "},
+    {" ", " ", "x", "x", " ", " "},
+    {" ", " ", "x", "x", " ", " "},
+    {" ", " ", "x", "x", " ", " "},
+    {" ", " ", "x", "x", " ", " "},
+    {" ", " ", "x", "x", " ", " "},
+    {" ", " ", "x", "x", " ", " "},
+    {" ", "x", "x", "x", "x", " "}
+};
+
+string answer = "нет";
 bool isChecked = false;
+
 do
 {
     Console.Clear();
+
     for (int i = 0; i < mas.GetUpperBound(0) + 1; i++)
     {
         for (int j = 0; j < mas.GetUpperBound(1) + 1; j++)
@@ -218,10 +223,17 @@ do
         }
         Console.WriteLine();
     }
-    if (isChecked == false) Console.Write("Включить лампочку?");
-    else Console.Write("Выключить лампочку?");
+    Console.WriteLine();
+
+    Console.Write((isChecked == false) ? "ВКЛ? " : "ВЫКЛ? ");
+
     answer = Console.ReadLine()!;
-    if (answer == "yes") isChecked = !isChecked;
+
+    if (answer == "да")
+    {
+        isChecked = !isChecked;
+    }
+
     if (isChecked)
     {
         mas[1, 2] = "x"; mas[1, 3] = "x";
@@ -230,9 +242,9 @@ do
     }
     else
     {
-        mas[1, 2] = ""; mas[1, 3] = "";
-        mas[2, 2] = ""; mas[2, 3] = "";
-        mas[2, 1] = ""; mas[2, 4] = "";
+        mas[1, 2] = " "; mas[1, 3] = " ";
+        mas[2, 2] = " "; mas[2, 3] = " ";
+        mas[2, 1] = " "; mas[2, 4] = " ";
     }
 }
 while (true);

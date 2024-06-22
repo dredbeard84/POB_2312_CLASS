@@ -1,35 +1,55 @@
-﻿//Console.Title = "Планировщик задач";
-//const int COLUMNS = 5;
+﻿Console.Title = "Список";
 
-Console.Title = "Список задач";
-const int COLUMNS = 2;
+const int COLUMNS = 1;
 
-const int ROWS = 1;
-int tasks = 1;
-int rows = ROWS + tasks;
+Console.WriteLine("Сколько нужно строк?");
+int rows = int.Parse(Console.ReadLine()!);
+Console.WriteLine();
 
-string[,] table = new string[rows, COLUMNS];
+string[,] taskList = new string[++rows, COLUMNS];
 
 for (int i = 0; i < rows; i++)
 {
     for (int j = 0; j < COLUMNS; j++)
     {
-        table[i, j] = " . ";
-        table[0, 0] = "НОМЕР";
-        table[0, 1] = "ЗАДАЧА";
-        //table[0, 2] = "ДАТА";
-        //table[0, 3] = "ВРЕМЯ";
-        //table[0, 4] = "ПРИОРИТЕТ";
-        //if (i > 0)
-        //{
-        //    table[i, 0] = taskNumber.ToString();
-        //}
-        Console.Write($"{table[i, j],-10}");
+        taskList[i, j] = " . ";
+        taskList[0, 0] = "НОМЕР";
+        Console.Write($"{taskList[i, j],-10}");
     }
     Console.WriteLine();
 }
 Console.WriteLine();
 
+
+
+
+//Console.Title = "Планировщик задач";
+//const int COLUMNS = 5;
+//const int ROWS = 1;
+//int tasks = 1;
+//int rows = ROWS + tasks;
+
+//string[,] table = new string[rows, COLUMNS];
+
+//for (int i = 0; i < rows; i++)
+//{
+//    for (int j = 0; j < COLUMNS; j++)
+//    {
+//        table[i, j] = " . ";
+//        table[0, 0] = "НОМЕР";
+//        table[0, 1] = "ЗАДАЧА";
+//        table[0, 2] = "ДАТА";
+//        table[0, 3] = "ВРЕМЯ";
+//        table[0, 4] = "ПРИОРИТЕТ";
+//        if (i > 0)
+//        {
+//            table[i, 0] = taskNumber.ToString();
+//        }
+//        Console.Write($"{table[i, j],-10}");
+//    }
+//    Console.WriteLine();
+//}
+//Console.WriteLine();
 
 //Console.WriteLine("Меню:\n" +
 //    "[1] Добавить\n" +
@@ -39,25 +59,10 @@ Console.WriteLine();
 //    "[5] Выход\n");
 //int number = int.Parse(Console.ReadLine()!);
 
-do
-{
-    Console.Write("Введите название задачи: ");
-    string taskName = Console.ReadLine();
-
-    for (int i = 0; i < rows; i++)
-    {
-        for (int j = 0; j < COLUMNS; j++)
-        {
-            table[tasks, 1] = taskName;
-            Console.Write($"{table[i, j],-10}");
-        }
-        Console.WriteLine();
-    }
-    Console.WriteLine();
-    tasks++;
 
 
-} while (true);
+
+
 
 
 
